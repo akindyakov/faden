@@ -5,7 +5,16 @@
 use std::io;
 
 fn main() {
-    println!("How do you feel today?");
+    println!(
+        "How do you feel today?\n{}\n{}\n{}",
+        "1 - good",
+        "2 - ok",
+        "3 - bad",
+    );
+
+    // better
+    // same
+    // worse
 
     let mut line = String::new();
     match io::stdin().read_line(&mut line) {
